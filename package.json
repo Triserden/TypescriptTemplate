@@ -1,0 +1,32 @@
+{
+  "name": "typescripttemplate",
+  "version": "1.0.0",
+  "description": "A template for your Typescript Project, complete with docker, prettifier, jest, and eslint.",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "start": "node build/main.js",
+    "dev": "npx ts-node src/main.ts",
+    "lint": "npx prettier . --write && eslint src",
+    "test": "ts-mocha -p tsconfig.json test/**/*.ts"
+  },
+  "author": "Triserden",
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.1.0",
+    "@eslint/js": "^9.5.0",
+    "@types/expect": "^24.3.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.14.7",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "mocha": "^10.4.0",
+    "prettier": "3.3.2",
+    "rimraf": "^5.0.7",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "5.4.5"
+  }
+}
