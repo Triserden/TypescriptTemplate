@@ -1,0 +1,5 @@
+services:
+  authenticator:
+    build:
+      dockerfile: Dockerfile
+      target: prod
